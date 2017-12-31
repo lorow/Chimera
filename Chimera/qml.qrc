@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Images/background.png</file>
+        <file>font/roboto/LICENSE.txt</file>
+        <file>font/roboto/Roboto-Black.ttf</file>
+        <file>font/roboto/Roboto-BlackItalic.ttf</file>
+        <file>font/roboto/Roboto-Bold.ttf</file>
+        <file>font/roboto/Roboto-BoldItalic.ttf</file>
+        <file>font/roboto/Roboto-Italic.ttf</file>
+        <file>font/roboto/Roboto-Light.ttf</file>
+        <file>font/roboto/Roboto-LightItalic.ttf</file>
+        <file>font/roboto/Roboto-Medium.ttf</file>
+        <file>font/roboto/Roboto-MediumItalic.ttf</file>
+        <file>font/roboto/Roboto-Regular.ttf</file>
+        <file>font/roboto/Roboto-Thin.ttf</file>
+        <file>font/roboto/Roboto-ThinItalic.ttf</file>
+    </qresource>
+</RCC>
