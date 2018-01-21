@@ -16,5 +16,7 @@
         <file>font/roboto/Roboto-Regular.ttf</file>
         <file>font/roboto/Roboto-Thin.ttf</file>
         <file>font/roboto/Roboto-ThinItalic.ttf</file>
+        <file>Images/logos/github.png</file>
+        <file>Images/logos/github.svg</file>
     </qresource>
 </RCC>
