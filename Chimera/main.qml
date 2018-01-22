@@ -121,7 +121,7 @@ ApplicationWindow {
                 color: "#18d4fd"
                 text: qsTr("Login")
                 anchors.top: parent.top
-                anchors.topMargin: 15
+                anchors.topMargin: 20
                 font.family: "font/roboto/Roboto-Thin.ttf"
                 anchors.left: parent.left
                 anchors.leftMargin: 14
@@ -141,7 +141,7 @@ ApplicationWindow {
                 anchors.leftMargin: 0
                 font.family: "font/roboto/Roboto-Thin.ttf"
                 horizontalAlignment: Text.AlignHCenter
-                anchors.topMargin: 15
+                anchors.topMargin: 20
                 anchors.top: parent.top
                 font.pixelSize: 20
                 verticalAlignment: Text.AlignVCenter
@@ -347,9 +347,9 @@ ApplicationWindow {
                 height: 18
                 color: "#ffffff"
                 anchors.right: parent.right
-                anchors.rightMargin: 10
+                anchors.rightMargin: 8
                 anchors.top: parent.top
-                anchors.topMargin: 10
+                anchors.topMargin: 8
 
                 Rectangle {
                     id: rectangle3
@@ -402,9 +402,54 @@ ApplicationWindow {
                     id: mouseArea1
                     anchors.fill: parent
                 }
-                anchors.topMargin: 10
+                anchors.topMargin: 8
                 anchors.right: exit.left
-                anchors.rightMargin: 10
+                anchors.rightMargin: 8
+            }
+
+            Text {
+                id: forgotPasswordButton
+                y: 471
+                width: 95
+                height: 22
+                color: "#c6c6c6"
+                text: qsTr("Forgot password?")
+                anchors.left: parent.left
+                anchors.leftMargin: 8
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 11
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
+                font.family: "font/roboto/Roboto-Thin.ttf"
+                font.pixelSize: 12
+
+                MouseArea {
+                    id: mouseArea2
+                    anchors.fill: parent
+                }
+            }
+
+            Text {
+                id: skipButton
+                x: -1
+                y: 471
+                width: 33
+                height: 22
+                color: "#c6c6c6"
+                text: qsTr("Skip")
+                anchors.left: parent.left
+                horizontalAlignment: Text.AlignHCenter
+                anchors.bottom: parent.bottom
+                font.family: "font/roboto/Roboto-Thin.ttf"
+                anchors.leftMargin: 433
+                verticalAlignment: Text.AlignVCenter
+                anchors.bottomMargin: 11
+                font.pixelSize: 12
+
+                MouseArea {
+                    id: mouseArea3
+                    anchors.fill: parent
+                }
             }
         }
     }
