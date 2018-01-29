@@ -18,5 +18,10 @@
         <file>font/roboto/Roboto-ThinItalic.ttf</file>
         <file>Images/logos/github.png</file>
         <file>Images/logos/github.svg</file>
+        <file>screens/initialScreen/LoginAndConfigePage.qml</file>
+        <file>screens/initialScreen/creatorPages/pages/LoginPage.qml</file>
+        <file>screens/initialScreen/logos/logos/WelcomeLogo.qml</file>
+        <file>screens/initialScreen/creatorPages/LoginView.qml</file>
+        <file>screens/initialScreen/logos/LogoView.qml</file>
     </qresource>
 </RCC>
