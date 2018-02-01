@@ -16,6 +16,7 @@ ApplicationWindow {
            Qt.Window
     title: qsTr("Chimera! Time to rice up!")
 
+
     Rectangle {
         id: background
         anchors.fill: parent
@@ -25,6 +26,19 @@ ApplicationWindow {
         LoginAndConfigePage{
             id: loginForm
             anchors.fill: parent
+
+            onMouseMoved:{
+                applicationWindow.x += delta.x;
+                applicationWindow.y += delta.y;
+            }
+
+            onMinizeClicked: {
+                applicationWindow.showMinimized()
+            }
+
+            loginSection.loginPage.onLoginClicked: {
+                console.log(indexOfScreen)
+            }
         }
     }
 }

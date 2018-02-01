@@ -1,6 +1,5 @@
 import QtQuick 2.7
 import QtQuick.Controls 2.0
-import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
 import "./logos"
@@ -45,15 +44,15 @@ Item {
                 }
             }
 
-            SwipeView {
-                id: logoSwipe
-                currentIndex: root.currentIndex
-                anchors.fill: parent
-                interactive: false
+        }
+        SwipeView {
+            id: logoSwipe
+            currentIndex: root.currentIndex
+            anchors.fill: parent
+            interactive: false
 
-                WelcomeLogo{
-                    id: welcomeLogo
-                }
+            WelcomeLogo{
+                id: welcomeLogo
             }
         }
     }
