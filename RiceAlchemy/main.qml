@@ -35,10 +35,6 @@ ApplicationWindow {
             onMinizeClicked: {
                 applicationWindow.showMinimized()
             }
-
-            loginSection.loginPage.onLoginClicked: {
-                console.log(indexOfScreen)
-            }
         }
     }
 }

@@ -13,10 +13,11 @@ Item {
 
     width: 474
     height: 500
+
+    onCurrentIndexChanged: formSwipe.currentIndex = root.currentIndex
+
     Rectangle {
         id: background
-        width: 474
-        height: 500
         anchors.fill: parent
         border.width: 0
         color: "#ffffff"
@@ -31,7 +32,15 @@ Item {
 
         LoginPage{
             id: loginPage
-            anchors.fill: parent
+            width: 474
+            height: 500
+            onAccessGranted: root.currentIndex = 1
+        }
+
+        Rectangle{
+            width: 474
+            height: 500
+            color: "red"
         }
 
     }

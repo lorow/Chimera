@@ -2,7 +2,8 @@ QT += qml quick
 
 CONFIG += c++11
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    src/loginManager/loginmanager.cpp
 
 RESOURCES += \
     qml.qrc
@@ -31,3 +32,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     Images/background.png
+
+HEADERS += \
+    src/loginManager/loginManager.hpp \
+    src/loginManager/loginManager.hpp \
+    src/loginManager/loginManager.hpp \
+    src/loginManager/loginmanager.h

@@ -6,9 +6,12 @@ import QtGraphicalEffects 1.0
 Item {
     id: root
 
-    signal loginClicked          (var indexOfScreen)
-    signal skipClicked           (var indexOfScreen)
-    signal forgotPasswordClicked ()
+    signal skipClicked    ()
+    signal accessGranted  ()
+
+    Connections{
+        target: loginManager
+    }
 
     Text {
         id: loginText
@@ -256,7 +259,8 @@ Item {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                root.loginClicked(1);
+                if (loginManager.loginClicked(loginInput.text, passwordInput.text))
+                    root.accessGranted()
             }
         }
     }
@@ -280,7 +284,7 @@ Item {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                root.skipClicked(1)
+                loginManager.forgotPassword()
             }
         }
     }
@@ -305,7 +309,7 @@ Item {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                root.forgotPasswordClicked()
+                root.skipClicked()
             }
         }
     }

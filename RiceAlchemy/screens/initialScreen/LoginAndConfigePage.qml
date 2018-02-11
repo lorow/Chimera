@@ -10,7 +10,6 @@ Item {
     id: root
     width: 800
     height: 500
-    property alias loginSection: loginSection
 
     signal mouseMoved(var delta)
     signal minizeClicked()
@@ -26,6 +25,8 @@ Item {
         anchors.bottomMargin: 0
         anchors.leftMargin: 0
         anchors.topMargin: 0
+        z: 2
+
     }
 
     LoginView{

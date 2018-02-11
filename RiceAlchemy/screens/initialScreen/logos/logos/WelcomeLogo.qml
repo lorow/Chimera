@@ -8,11 +8,11 @@ Item {
     Text {
         id: appName
         x: 0
-        y: 264
+        y: 335
         width: 326
         height: 33
         color: "#ffffff"
-        text: qsTr("Chimera")
+        text: qsTr("RiceAlchemy")
         font.family: "font/roboto/Roboto-bold.ttf"
         font.bold: true
         verticalAlignment: Text.AlignVCenter
@@ -23,11 +23,12 @@ Item {
     Text{
         id: subText
         x: 0
-        y: 303
         width: 326
         height: 33
         color: "#ffffff"
-        text: qsTr("Hello there!")
+        text: qsTr("Rice Up!")
+        anchors.top: appName.bottom
+        anchors.topMargin: 6
         font.family: "font/roboto/Roboto-Thin.ttf"
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
